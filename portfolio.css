@@ -1,0 +1,1140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+  
+/*======================================= Navbar ============================================*/
+.nav{
+    background-color: black;
+}
+.nav .startnav{
+    margin: 0px;
+    list-style-type: none;
+    padding-left: 10px;
+    color: white;
+}
+.nav .startnav li img{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    overflow-x: hidden;
+    position: sticky;
+    top: 0px;
+}
+.nav .midnav{
+    display: flex;
+    list-style-type: none;
+}
+.nav .midnav li a:hover{
+    color:blueviolet;
+    transition: all 1s;
+}
+#Perent2 .c a{
+    text-decoration: none;
+    color: white;
+}
+.nav .midnav li a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+.nav .endnav{
+     
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 15px 8px 15px;
+    margin-left: 300px;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;  
+}
+.nav .endnav li a:hover{
+    background-color: white;
+    transition: all 1s;
+    color: black;
+}
+.nav .endnav li a{
+    text-decoration: none;
+    color: white;
+}
+#bars{
+    font-size: 64px;
+    /* position: relative; */
+    padding-left: 90%;
+    margin: 10px;
+    display: none;
+}
+/* ================================ Media Query For Navbar (1041px) ================================= */
+@media(max-width:1041px){
+   .nav{
+    display: none;
+    z-index: 1000;
+    /* position: static; */
+   }
+    #bars{
+        display: flex;
+        background-color: black;
+        margin: 0px;
+       
+    }
+    #lab{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        position: static;
+    }
+    #check1:checked~.nav{
+        display: block;
+    }
+    
+    #check1:checked~.nav .startnav li img{
+        display: block;
+        margin-top: -100px;
+        color: black;
+        background-color: black;
+    }
+    #extra li{
+        display: block;
+        background-color: black;
+        margin: 0px;
+    }
+    .nav .midnav li a{
+        display: block;
+    }
+    .nav .midnav{
+        display: block;
+        
+    }
+    .nav .endnav{
+        margin-left: 0px;
+        border: none;   
+    }
+    .nav .endnav li a{
+        padding: 0px;
+        border: 1px solid wheat;
+        border-radius: 10px;
+        padding: 8px 10px 8px 10px;
+        margin-left: 10px;
+    }
+}
+
+/* ============================= Media Query Navbar (426px) ================================== */
+@media(max-width:426px){
+    #bars{
+        padding-left: 370px;
+        font-size: 50px;
+    }
+
+}
+
+/*===================================== Hero Section ==========================================*/
+.hero{
+    background-image: url(./frist\ background\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    /* position: sticky;
+    top: 0px; */
+    margin: 0px;
+    padding: 0px;
+}
+.hero1{
+    margin-top: 120px;
+    margin-left: 100px;
+    font-family: "Anton", sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+.hero2{
+    display: flex;
+    padding-left: 100px;
+    overflow-x: hidden;
+}
+.hero2 .Resume{
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 25px 5px 25px;
+    margin-right: 10px;
+    color: white;
+    overflow-x: hidden;
+}
+
+.hero2 .Resume li a{
+    text-decoration: none;
+    color: white;
+}
+.hero2 .Resume:hover{
+    color: black;
+    background-color: azure;
+    transition: color 1s;
+}
+.Resume li a:hover{
+    color: black;
+}
+.Portfolio:hover{
+    background-color: azure;
+    transition: color 1s;
+    color: red;
+    
+}
+.hero2 .Portfolio li a:hover{
+    color: black;
+}
+.hero2 .Portfolio{
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 25px 5px 25px;
+}
+.hero2 .Portfolio li a{
+    text-decoration: none;
+    color: white;
+}
+/*=============================== Hero logo's ===========================*/
+#logo{
+    position: absolute;
+    color: white;
+    margin-top: 550px;
+    margin-left: 120px;
+    font-size: 35px;
+    overflow-x: hidden; 
+}
+#logo i:hover{
+    color: blue;
+    transition: all 1s;
+}
+#logo i{
+    padding-right: 10px;
+
+}
+#logo i a{
+    color: white;
+}
+/* 1) ============================ Media Query For Horo Section(1041px) ============================= */
+@media(max-width:1041px){
+    #logo {
+        margin-top: 380px;
+        margin-left: 100px;
+    }
+    #check1:checked~#logo{
+        display: block;
+        margin-top: 850px;
+        margin-left: 100px;
+    }
+    .hero{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%vh;
+        height: 600px;
+    }  
+}
+/* 2) ============================ Media Query For Hero Section(769px) ============================== */
+@media(max-width:769px){
+    #check1:checked~#logo{
+        margin-top: 850px;
+    }
+}
+
+/* 3) ============================== Media Query Hero Section (426px) =============================== */
+@media(max-width:426px){
+    #logo {
+        margin-top: 460px;
+        margin-left: 100px;
+    }
+
+}
+/*==================================== Parent2-About Section ========================================*/
+#Perent2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    background-image: url;
+    overflow-x: hidden;
+    background-color: black; 
+}
+#Perent2 .part1{
+    margin-top: 75px;
+    color: white;
+    padding-top: 20px;
+}
+#Perent2 .part2 img{
+    height: 600px;
+    width: 450px;
+    padding-top: 50px;
+}
+.part1 .a a{
+    font-family: "Anton", sans-serif;
+    padding: 0px;
+    font-size: 60px;
+    
+}
+.part1 .b{
+    padding-top: 50px;
+}
+.part1 .b b{
+    font-size: 20px;
+}
+.part1 .c{
+    margin-top: 150px;
+    margin-left: 80px;
+    font-family: "Anton", sans-serif;
+}
+.part1 .c a{
+    font-size: 18px;
+}
+/*========================= Location-Logo In About S. =============================*/
+#logo2{
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    margin-top: 1275px;
+    margin-left: 308px;
+    overflow-x: hidden;
+}
+/* ================================ Media Query For About Section(1041px) =========================== */
+@media(max-width:1041px){
+    #Perent2{
+        display: block;
+    }
+    .part1{
+        padding-left: 220px;
+    }
+    .part2{
+        padding-left: 300px;
+    }
+    .part1 .a a{
+        padding-left: 0px;
+    }
+    #Perent2 .part1 div{
+        padding-left: 0px;
+    }
+    .part1 .b{
+        padding-left: 40px;
+    }
+    .part1 .c a{
+        font-size: 24px;
+    }
+    #logo2{
+        margin-top: 1080px;
+        font-size: 35px;
+        margin-left: 385px;
+    }
+    #check1:checked~#logo2{
+        display: block;
+        margin-top: 1518px;
+        margin-left: 385px;
+        font-size: 36px;
+    }
+}
+/* ================================= Media Query For About Section(769px) ============================ */
+@media(max-width:769px){
+    .part1{
+        padding-left: 120px;
+    }
+    #logo2{
+        margin-top: 1070px;
+        font-size: 30px;
+        margin-left: 285px;
+    }
+    #check1:checked~#logo2{
+        margin-top: 1485px;
+        font-size: 30px;
+        margin-left: 285px;
+    }
+    .part2{
+        padding-left: 200px;
+    }
+}
+
+/* 3) ============================= Media Query For About Section (426px) ============================= */
+@media(max-width:426px){
+    .part1{
+        padding-left: 50px;
+        font-size: 18px;
+    }
+    #Perent2 .part1 .a div{
+        font-size: 10px;
+    }
+    .part1 .a a{
+        padding-left: 30px;
+        font-size: 40px;
+    }
+    #Perent2 .part1 .a div{
+        padding-left: 80px;  
+    }
+    .part1 .b b{
+        padding-left: 10px;
+        font-size: 13px;
+    }
+    .part1 .b {
+        padding-left: 30px;
+    }
+    .part1 .c a{
+        font-size: 13px;
+    }
+    #logo2{
+        margin-top: 1045px;
+        font-size: 22px;
+        margin-left: 165px;
+    }
+    #check1:checked~#logo2{
+        margin-top: 1460px;
+        font-size: 22px;
+        margin-left: 165px;
+    }
+    .part2{
+        padding-left: 30px;
+    }
+    #Perent2 .part2 img{
+        width: 300px;
+        height: 400px;
+        padding-left: 50px;  
+    }
+}
+
+/*==================================== Peren3 Servises Section ======================================*/
+
+#Perent3{
+    overflow-x: hidden;   
+}
+#realperent{
+    background-color: black;
+    overflow-x: hidden;
+}
+.s{
+    padding-top: 80px;
+    font-size: 40px;
+    color:rgb(152, 152, 196);
+    font-family: "Anton", sans-serif;
+    padding-bottom: 40px;      
+}
+#box{
+    
+   display: grid;
+   grid-template-columns: auto auto;
+   justify-content: space-evenly;
+   padding: 19px;
+   overflow-x: hidden;
+}
+#box .box1{
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    background-image: url(https://www.pngmart.com/files/23/Neon-Frame-PNG-Image.png);
+    background-size: 350px 250px;
+    background-repeat: no-repeat;
+    color: white;   
+}
+#box .box1:hover{
+    scale: 1.1;
+    transition: scale 1s;
+}
+#box .box2{
+    margin: 20px;
+    background-image: url(https://www.pngmart.com/files/23/Neon-Frame-PNG-Image.png);
+    background-size: 350px 250px;
+    background-repeat: no-repeat;
+    color: white;   
+}
+#box .box2:hover{
+    scale: 1.1;
+    transition: scale 1s;
+}
+#box .box3{
+    margin: 20px;
+    background-image: url(https://www.pngmart.com/files/23/Neon-Frame-PNG-Image.png);
+    background-size: 350px 250px;
+    background-repeat: no-repeat;
+    color: white;
+}
+#box .box3:hover{
+    scale: 1.1;
+    transition: scale 1s;
+}
+#box .box4{
+    
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    background-image: url(https://www.pngmart.com/files/23/Neon-Frame-PNG-Image.png);
+    background-size: 350px 250px;
+    color: white;
+}
+#box .box4:hover{
+    scale: 1.1;
+    transition: scale 1s;
+}
+
+/*=============================== boxlogo's ================================*/
+
+#boxlogo4{
+    position: absolute;
+    background-color: white;
+    border-radius: 40%;
+    font-size: 24px;
+    padding: 6px;
+    margin-top: 430px;
+    margin-left: 900px;
+    overflow-x: hidden;
+}
+#boxlogo3{
+    position: absolute;
+    background-color: white;
+    border-radius: 40%;
+    font-size: 24px;
+    padding: 6px;
+    margin-top: 430px;
+    margin-left: 296px;
+    overflow-x: hidden;
+}
+#boxlogo2{
+    position: absolute;
+    background-color: white;
+    border-radius: 40%;
+    font-size: 24px;
+    padding: 6px;
+    margin-top: 90px;
+    margin-left: 905px;
+    overflow-x: hidden;
+}
+#boxlogo1{
+    position: absolute;
+    background-color: white;
+    border-radius: 40%;
+    font-size: 24px;
+    padding: 6px;
+    margin-top: 85px;
+    margin-left: 296px;
+    overflow-x: hidden;
+}
+/*============================== Media Query For Servises Section(1041px) ==============================*/
+@media(max-width:1041px){
+    #box{
+        
+        margin-left: 50px;
+        margin-bottom: 0px;
+    }
+    #box .box1{
+        padding: 10px;
+        position: none;
+        padding-left: 2px;
+    }
+    #box .box2 {
+        padding-top: 1px;
+        padding: 10px;
+        padding-bottom: 120px;
+        padding-left: 2px;
+    }
+    #box .box2 a{
+        font-size: 9px;
+    }
+    #box .box3 {
+        margin-bottom: 60px;
+    }
+    #box .box3 a{
+        font-size: 9px;
+    }
+    #box .box3{
+        padding-bottom: 80px;
+    }
+    #box .box4{
+        padding-top: 10px;
+    }
+    #boxlogo1{
+        margin-top: 92px;
+        margin-left: 125px;
+        z-index: -10000px;
+    }
+    #check1:checked~#boxlogo1{
+        margin-top: 2510px;
+        margin-left: 420px;
+        z-index: -10px;
+    }
+    #boxlogo2{
+        margin-top: 100px;
+        margin-left: 580px;
+    }
+    #check1:checked~#boxlogo2{
+        margin-top: 85px;
+        margin-left: 425px;
+    }
+    #boxlogo3{
+        margin-top: 460px;
+        margin-left: 120px;
+    }
+    #check1:checked~#boxlogo3{
+        margin-top: 430px;
+        margin-left: 420px;
+    }
+    #boxlogo4{
+        margin-top: 465px;
+        margin-left: 570px;
+    }
+    #check1:checked~#boxlogo4{
+        margin-top: 430px;
+        margin-left: 620px;
+    }
+}
+/*======================================= Media Query For Servises Section(769px) ======================*/
+@media(max-width:769px){
+    #box{
+        margin-left: 0px;
+        margin-bottom: 0px;    
+    }
+    #box .box1{
+        width: 100%;
+    }
+    #box .box2 a{
+        font-size: 11px;
+    }
+    #box .box3{
+        width: 100%;
+    }
+    #box .box3 a{
+        font-size: 11px;
+    }
+    #boxlogo1{
+        margin-left: 75px;
+    }
+    #boxlogo2{
+        margin-left: 420px;
+    }
+    #boxlogo3{
+        margin-left: 75px;
+    }
+    #boxlogo4{
+        margin-left: 415px;
+    }
+}
+/* 3) ===================================== Media Query For Servises Section (426px)==================== */
+@media(max-width:426px){
+    .s{
+        font-size: 30px;
+    }
+    #box{
+        display: block;
+    }
+    #box .box1{
+        background-image: none;
+    }
+    #box .box2{
+        background-image: none;
+    }
+    #box .box3{
+        background-image: none;
+    }
+    #box .box4{
+        background-image: none;
+    }
+    #box .box1 div{
+        padding-bottom: 0px;
+        /* border: 2px solid white; */
+    }
+    #box .box2 div{
+        padding-bottom: 0px;
+        /* border: 2px solid white; */
+    }
+    #box .box3 div{
+        padding-bottom: 0px;
+        /* border: 2px solid white; */
+    }
+    #box .box4 div{
+        padding-bottom: 0px;
+        /* border: 2px solid white; */
+    }
+    #boxlogo1{
+        margin-left: 85px;
+        margin-top: 105px;  
+        font-size: 15px; 
+    }
+    #check1:checked~#boxlogo1{
+        margin-left: 900px;
+    }
+    #boxlogo2{
+        margin-left: 85px;
+        margin-top: 445px;
+        font-size: 20px;
+    }
+    #boxlogo3{
+        margin-left: 80px;
+        margin-top: 760px;
+        font-size: 18px;
+    }
+    #boxlogo4{
+        margin-left: 80px;
+        margin-top: 1100px;
+        font-size: 18px;
+    } 
+}
+
+/*======================================= Portfolio1 Section ========================================*/
+
+.p{
+    padding: 60px;
+    color: white;
+    background-color: black;
+    font-size: 38px;
+    font-family: "Anton", sans-serif;
+    overflow-x: hidden;
+}
+.subheading{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: "Anton", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.portfolio1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    background-color: black;
+    overflow-x: hidden;
+   
+}
+.portfolio1 .p2{
+    border: 6px solid rgb(152, 152, 196);
+    width: 270px;
+    height: 190px;  
+}
+.portfolio1 .p1 div{
+    padding: 5px;
+    color: white;
+}
+
+#Pimg{
+    position: absolute;
+    margin-top: 2543px;
+    margin-left: 948px;
+    
+}
+#Pimg2{
+    position: absolute;
+    margin-top: 2845px;
+    margin-left:  955px;
+    
+}
+#Pimg3{
+    position: absolute;
+    margin-top: 3148px;
+    margin-left: 946px;
+    
+}
+#Pimg4{
+    position: absolute;
+    margin-top: 3450px;
+    margin-left:  945px;
+   
+}
+
+/* ============================ Media Query For Portfolio Section(1041px) ============================= */
+
+@media(max-width:1041px){
+    #Pimg{
+        margin-top: 3590px;
+        margin-left: 685px;
+    }
+    .subheading {
+        padding-left: 200px;
+        padding-right: 150px;
+    }
+    #check1:checked~#Pimg1{
+        margin-top: 4550px;
+        margin-left: 685px;
+    }
+    #Pimg2{
+        margin-top: 3916px;
+        margin-left: 685px;
+    }
+    #check1:checked~#Pimg2{
+        margin-top: 4350px;
+        margin-left: 685px;
+    }
+    #Pimg3{
+        margin-top: 4242px;
+        margin-left: 685px;
+    }
+    #check1:checked~#Pimg3{
+        margin-top: 4675px;
+        margin-left: 685px;
+    }
+    #Pimg4{
+        margin-top: 4570px;
+        margin-left: 685px;
+    }
+    #check1:checked~#Pimg4{
+        margin-top: 5000px;
+        margin-left: 685px;
+    }
+}
+/* 2) ==================================== Media Query For Portfolio Section (426px)==================== */
+@media(max-width:426px){
+    #Perent4 .p{
+        font-size: 30px;
+    }
+    .subheading{
+        padding-left: 30px;
+        padding-right: 0px;
+        font-size: 50px;
+        /* border: 2px solid white; */
+    }
+    .subheading a{
+        font-size: 18px;
+    }
+    #Perent4 .portfolio1{
+        display: block;
+        padding-left: 40px;
+        
+    }
+    #Perent4 .portfolio1 .p1{
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    #Perent4 .portfolio1 .p1 b{
+        font-size: 25px;
+    }
+}
+
+
+/* ==================================== Experiance Section ============================================ */
+.E1{
+    font-size: 38px;
+    padding-top: 150px;
+    font-family: "Anton", sans-serif;
+    /* color: white; */
+    overflow-x: hidden; 
+}
+#Perent5 #E2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 160px;
+    /* padding-bottom: 50px; */
+    color: white;  
+}
+#Perent5 #E2 div{
+    margin-left: 130px;
+    padding-bottom: 100px;
+    padding-right: 0px;
+}
+#E2 img{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#E2 div{
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+#Perent5{
+ background-color: black;
+}
+#Perent5 .E1{
+    color:rgb(152, 152, 196);
+}
+/* ================================= Media Query For Experiance Section(769px) ======================== */
+@media(max-width:769px){
+    #Perent5 #E2 div{
+        margin-left: 60px;
+        padding-bottom: 100px;
+        padding-right: 0px;
+    }
+}
+/* 2) =========================== Media Query For Experiance Section (426px) ========================= */
+@media(max-width:426px){
+    #Perent5 #E2{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 30px;
+    }
+    #Perent5 .E1 a{
+        font-size: 30px;
+    }
+}
+
+
+
+/* ============================== Perent6 Experience,Skill's,etc Section ============================== */
+
+#Perent6{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-evenly;
+   color: white;
+   background-color: black;
+   padding-bottom: 130px;
+   background-image: url(https://wallpaper.dog/large/10871937.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%vh;
+   height: 500px;
+
+}
+#Perent6 .Hobbies .logo{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding-top: 0px;
+}
+.Hobbies .H{
+    color:rgb(152, 152, 196);
+}
+.Design .D{
+    color:rgb(152, 152, 196);
+}
+.What .W{
+    color:rgb(152, 152, 196);
+}
+.Education h1{
+    color:rgb(152, 152, 196);   
+}
+.Experience .E{
+    color:rgb(152, 152, 196);
+}
+.Personal h1{
+    color:rgb(152, 152, 196);
+}
+#Perent6 .SS{
+    padding: 30px 0px 50px 0px;
+    color:rgb(152, 152, 196);
+}
+#Perent6 .L{
+    padding: 10px 0px 20px 0px;
+    color:rgb(152, 152, 196);
+}
+.Languages div{
+    font-family: "Oswald", sans-serif;
+}
+.Parcent div{
+    font-family: "Oswald", sans-serif;
+}
+.Experience div{
+    font-family: "Oswald", sans-serif;
+}
+#Perent6 .Hobbies .logo i{
+    padding-left: 40px;
+    color:;
+}
+#Perent6 .E{
+    padding: 30px 0px 50px 0px;
+}
+#Perent6 .Education{
+    padding: 10px 0px 20px 0px;
+}
+#Perent6 .What{
+    padding: 30px 0px 50px 0px;
+}
+#Perent6 .Design{
+    padding: 10px 0px 20px 0px;
+}
+#Perent6 .H{
+    padding: 10px 0px 20px 0px;
+}
+
+/* ================================== Media Query For Experiance2 All(769px) =========================== */
+ @media(max-width:769px){
+     #Perent6{
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-size: 14px;
+     }
+ }
+
+ /* ================================ Media Query For Experiance2 All(426px) ============================= */
+ @media(max-width:426px){
+    #Perent6{
+        display: block;
+        padding-left: 90px;
+        width: 335px;
+        height: 1800px;
+        font-size: 20px;
+        top: 0px;
+    }
+ }
+/*================================== Perent7 Contact Form Section =======================================*/
+
+.wordlogo  i{
+    padding: 8px 8px 8px 8px;
+    border-radius: 30%;
+    margin: 5px;
+    background-color: rgb(81, 87, 99);
+    color: white;   
+}
+.Drop h4{
+    font-size: 24px;
+    color:rgb(152, 152, 196);
+}
+.logowithword {
+    display: flex;
+    padding-top: 20px;
+}
+.Contact{
+    border-bottom: 2px solid rgba(32, 39, 230, 0.862);
+    width: 170px;
+}
+.word{
+    padding-top: 12px;
+    padding-left: 10px;
+}
+.Form{
+    
+    padding-bottom: 5px;
+    padding: 20px 10px 0px 10px;
+    border: 1px solid black;
+    background-color: rgb(85, 89, 95);
+    height: 210px;
+    margin-top: 50px;
+}
+.Form input{
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+}
+.Form button{
+    border-radius: 5px;
+    padding: 2px 12px 2px 12px;    
+}
+#DropForm{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    border-bottom: 3px solid white;
+    padding-bottom: 80px;
+}
+#Perent7{
+    padding-top: 100px;
+    background-image: url(https://www.format.com/wp-content/uploads/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%vh;
+    color: white;
+
+}
+.Form{
+    box-shadow: 0px 10px 10px rgb(49, 47, 47);
+}
+.word :hover{
+    scale: 1.1;
+    transition: scale 1s;
+}
+#Perent8{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding: 20px;
+    background-color: rgb(164, 158, 175);
+}
+.Footerlogo a{
+    padding-right: 5px;
+    color: darkblue;
+}
+.Rahul b{
+    font-family: "Oswald", sans-serif;
+}
+.P8_second div b{
+    font-size: 25px;
+    color: black;
+    margin-right: 80px;
+}
+.P8_second b{
+    font-family: "Oswald", sans-serif;
+    color: darkmagenta;
+}
+.P8_third div b{
+    color: black;
+    font-size: 25px; 
+    font-family: Oswald, sans-serif;
+    margin-right: 60px;
+}
+.P8_third b{
+    color: darkmagenta;
+    font-family: Oswald, sans-serif;
+}
+.P8_forth div b{
+    color: black;
+    font-size: 25px; 
+    font-family: Oswald, sans-serif;
+}
+.P8_forth b{
+    color: darkmagenta;
+    font-family: Oswald, sans-serif;
+}
+.next{
+    display: flex;
+    padding-right: 50px;
+}
+/* ========================= Media Query For Contact Form (426px) ============================= */
+@media(max-width:426px){
+    #DropForm{
+        display: block;
+    }
+    #DropForm .Drop{
+        padding-left: 50px;
+    }
+    #DropForm .Drop h4{
+        padding-left: 50px;
+    }
+    #DropForm .Drop{
+        padding-left: 50px;
+    }
+    #Perent7 .Form{
+        margin-left: 120px;
+        margin-right: 105px;
+        padding: 20px 0px 0px 10px;
+    }
+}
+/* ========================= Media Query For Footer Section (769px) ============================= */
+@media(max-width:769px){
+    .Rahul{
+        margin-right: 50px;
+    }
+}
+
+/* ========================= Media Query For Footer Section (426px) ============================= */
+@media(max-width:426px){
+    #Perent8{
+        padding-left: 80px;
+    }
+    #Perent8 .next{
+        display: block;
+    }
+    #Perent8 .next .P8_second{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #Perent8 .next .P8_third{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #Perent8 .next .P8_forth{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #Perent8 .Footerlogo a{
+        font-size: 22px;
+        padding:0px;
+    }
+}
